@@ -2,11 +2,50 @@
 <html>
 <head><title>How It Works + Shout-outs</title>
 <style>
-
-li {
-    line-height: 2.5em;
-    height: auto;
+body {
+  font-family: sans;
+  width: 50em;
+  margin: 0 auto;
+  line-height: 2em;
 }
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+  
+ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: #fcd000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(-10deg);
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+}
+
+/* li {
+/*   line-height: 2.5em;
+/*   height: auto;
+/* }
+*/
 
 .tooltip {
   position: relative;
@@ -46,10 +85,11 @@ li {
 .tooltip:active .tooltiptext {
   visibility: visible;
 }
-    
+
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
 </style>
 </head>
 
@@ -57,7 +97,9 @@ li {
 
 <h1>How It Works + Shout-outs</h1>
 
-<p><i>Tap the blue text to see the shout-out.</i></p>
+<p><i>Click the blue writing to see the shout-out.</i></p>
+
+<hr>
 
 <p><button class="tooltip">Rarely have<span class="tooltiptext">Never!</span></button> we seen a person fail who has thoroughly followed our path.
   Those who do not recover are people who cannot or will not completely give themselves to this simple program, usually men and women who are 
@@ -103,11 +145,13 @@ li {
 
 <p>Our description of the alcoholic, the chapter to the agnostic, and our personal adventures before and after make clear three pertinent ideas:</p>
 
-<ol type="a">
-<li><button class="tooltip">That we<span class="tooltiptext">One!</span></button> were alcoholic and could not manage our own lives.</li>
-<li><button class="tooltip">That probably<span class="tooltiptext">Two!</span></button> no human power could have relieved <button class="tooltip">our alcoholism.<span class="tooltiptext">Say 'Yes' in Spanish!</span></button></li>
-<li>That God could and would if He were sought.</li>
-</ol>
+<ul>
+<li><b>a)</b> <button class="tooltip">That we<span class="tooltiptext">One!</span></button> were alcoholic and could not manage our own lives.</li>
+<li><b>b)</b> <button class="tooltip">That probably<span class="tooltiptext">Two!</span></button> no human power could have relieved <button class="tooltip">our alcoholism.<span class="tooltiptext">Say 'Yes' in Spanish!</span></button></li>
+<li><b>c)</b> That God could and would if He were sought.</li>
+</ul>
+
+<hr>
 
 <h2>Print and add to flashcards, one per card </h2>
 
