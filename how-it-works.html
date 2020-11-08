@@ -1,12 +1,57 @@
+<!DOCTYPE html>
 <html>
-<head><title>How It Works + Shout-outs</title></head>
+<head><title>How It Works + Shout-outs</title>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+</head>
+
 <body>
 
 <h1>How It Works + Shout-outs</h1>
 
 <p><i>Hover your computer mouse over the yellow writing to see the shout-out.</i></p>
 
-<p><span title="Never!" style="background-color: yellow;">Rarely</span> have we seen a person fail who has thoroughly followed our path. Those who do not recover are people who cannot or will not completely give themselves to this simple program, usually men and women who are constitutionally incapable of being honest with <span title="Not me!" style="background-color: yellow;">themselves</span>. There are such unfortunates. They are not at fault; they seem to have been born that way. They are naturally incapable of grasping and developing a manner of living which demands rigorous honesty. Their chances are less than average. There are those, too, who suffer from grave emotional and mental disorders, but many of them do recover if they have the capacity to be <span title="Liars!" style="background-color: yellow;">honest.</p>
+  
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+<p><span class="tooltip">Never!<span class="tooltiptext">Rarely</span></span> have we seen a person fail who has thoroughly followed our path. Those who do not recover are people who cannot or will not completely give themselves to this simple program, usually men and women who are constitutionally incapable of being honest with <span title="Not me!" style="background-color: yellow;">themselves</span>. There are such unfortunates. They are not at fault; they seem to have been born that way. They are naturally incapable of grasping and developing a manner of living which demands rigorous honesty. Their chances are less than average. There are those, too, who suffer from grave emotional and mental disorders, but many of them do recover if they have the capacity to be <span title="Liars!" style="background-color: yellow;">honest.</p>
 <p>Our stories disclose in a general way what we used to be like, what happened, and what we are like now. If you have decided that you want what we have and are willing to go to any length to get it - then you are ready to take certain steps.</p>
 <p>At some of these we <span title="Bawk bawk bawk! (Make a sound like a chicken)" style="background-color: yellow;">balked</span>. We thought that we could find an easier, softer way. But we could not. With all earnestness at our command, we <span style="background-color: yellow;" title="Pleeeeeeaaaassseee please pleeease pleaaase">beg</span> of you to be fearless and thorough from the very start. Some of us have tried to hold on to our old ideas and the result was <span title="Nils? Where is Nils?! / Neil" style="background-color: yellow;">nil</span> until we let go absolutely.</p>
 <p>Remember that we deal with alcohol - cunning, baffling, <span title="Delicious! Expensive!" style="background-color: yellow;">powerful!</span> Without help it is too much for us. But there is One who has all power - that One is God. May you find him now.</p>
